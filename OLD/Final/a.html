@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+ <head>
+ <title>Final - Search for 426 Terms</title>
+ <script>
+ function showResult(str) {
+   if (str.length==0) { 
+     document.getElementById("livesearch").innerHTML="";
+     document.getElementById("livesearch").style.border="0px";
+     return;
+   }
+   if (window.XMLHttpRequest) {
+    // code for IE7+, Firefox, Chrome, Opera, Safari
+     xmlhttp=new XMLHttpRequest();
+   } else {  // code for IE6, IE5
+     xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+   }
+   xmlhttp.onreadystatechange=function() {
+     if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+       document.getElementById("livesearch").innerHTML=xmlhttp.responseText;
+       document.getElementById("livesearch").style.border="1px solid #A5ACB2";
+     }
+   }
+   xmlhttp.open("GET","livesearch.php?myQuery="+str,true);
+   xmlhttp.send();
+ }
+ </script>
+ <style type="text/css">
+ #container {
+	width: 80%;
+	margin-top: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(255,255,255,0.18);
+	border-radius: 25px;
+	margin-bottom: 20px;
+}
+ #title {
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-size: 45px;
+	font-variant: small-caps;
+	font-weight: bolder;
+	text-align: center;
+	text-decoration: underline;
+}
+body {
+	background-image: -webkit-linear-gradient(132deg,rgba(217,240,213,0.60) 0%,rgba(169,107,107,0.42) 61.66%,rgba(155,212,193,0.61) 88.60%);
+	background-image: -moz-linear-gradient(132deg,rgba(217,240,213,0.60) 0%,rgba(169,107,107,0.42) 61.66%,rgba(155,212,193,0.61) 88.60%);
+	background-image: -o-linear-gradient(132deg,rgba(217,240,213,0.60) 0%,rgba(169,107,107,0.42) 61.66%,rgba(155,212,193,0.61) 88.60%);
+	background-image: linear-gradient(318deg,rgba(217,240,213,0.60) 0%,rgba(169,107,107,0.42) 61.66%,rgba(155,212,193,0.61) 88.60%);
+}
+
+ </style>
+ </head>
+ <body>
+ <div id="container">
+   <div id="title">Search for 426 Terms</div>
+   <p>Enter any part of a 426 lesson or term:</p>
+   <form>
+     <input type="text" size="30" onkeyup="showResult(this.value)">
+     <div id="livesearch"></div>
+   </form>
+ </div>
+ </body>
+ </html> 

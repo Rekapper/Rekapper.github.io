@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" generated="2014-10-27T08:13:57">
+<Term>
+<ID>1</ID>
+<Name>IsNaN</Name>
+<Notes>Can compare if string is not a number</Notes>
+<thelink>http://cwu.edu/~vogtp/Final/code/isNaN.html</thelink>
+</Term>
+<Term>
+<ID>2</ID>
+<Name>QuerySelector</Name>
+<Notes>Query Selector returns the first element within the document (using depth-first pre-order traversal of the document's nodes) that matches the specified group of selectors.</Notes>
+<thelink>http://cwu.edu/~vogtp/Final/code/query.html</thelink>
+</Term>
+<Term>
+<ID>3</ID>
+<Name>HTML5</Name>
+<Notes>HTML5 Consists of:</Notes>
+<thelink>http://en.wikipedia.org/wiki/HTML5</thelink>
+</Term>
+<Term>
+<ID>4</ID>
+<Name>If Then Else</Name>
+<Notes>Javascript Conditionals</Notes>
+<thelink>http://cwu.edu/~vogtp/Final/code/ifthenelse.html</thelink>
+</Term>
+<Term>
+<ID>5</ID>
+<Name>Functions</Name>
+<Notes>Javascript Blocks of Code to Preform a Task</Notes>
+<thelink>http://cwu.edu/~vogtp/Final/code/Function.html</thelink>
+</Term>
+<Term>
+<ID>6</ID>
+<Name>Local Variable</Name>
+<Notes>Javascript Local Variable Example</Notes>
+<thelink>http://en.wikipedia.org/wiki/HTML5</thelink>
+</Term>
+<Term>
+<ID>7</ID>
+<Name>Global Variable</Name>
+<Notes>Javascript Global Variable Example</Notes>
+<thelink>http://en.wikipedia.org/wiki/HTML5</thelink>
+</Term>
+<Term>
+<ID>8</ID>
+<Name>Alert</Name>
+<Notes>Javascript Function to call an alert to the users screen</Notes>
+<thelink>http://cwu.edu/~vogtp/Final/code/Alert.html</thelink>
+</Term>
+<Term>
+<ID>9</ID>
+<Name>Array</Name>
+<Notes>Javascript Array Example</Notes>
+<thelink>http://www.cwu.edu/~vogtp/4th%20Week/Petstorev2.html</thelink>
+</Term>
+<Term>
+<ID>10</ID>
+<Name>Constructor</Name>
+<Notes>A manual way Javascript handles building out arrays from user input</Notes>
+<thelink>http://www.w3schools.com/js/js_object_definition.asp</thelink>
+</Term>
+<Term>
+<ID>11</ID>
+<Name>document.getElementById</Name>
+<Notes>Grabbing input from a div containing an ID</Notes>
+<thelink>http://cwu.edu/~vogtp/Final/code/getElement.html</thelink>
+</Term>
+</dataroot>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Ellensburg Fish House | Reservations</title>
+<link rel="icon" href="favicon.ico">
+<link href="fish.css" rel="stylesheet" type="text/css">
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+			<script>
+			$(function() {
+			$( "#datepicker" ).datepicker();
+			});
+			</script>
+</head>
+<body>
+	<div class="header">Ellensburg Fish House
+		<div class="nav">
+		<a href="home.html">Home</a>&nbsp;&nbsp;|&nbsp;
+		<a href="about.html">About</a>&nbsp;&nbsp;|&nbsp;
+		<a href="menu.html">Menu</a>&nbsp;&nbsp;|&nbsp;
+		<a href="reservations.html">Reservations</a>&nbsp;&nbsp;|&nbsp;
+		<a href="credits.html">Credits</a>
+		</div>
+	</div>
+<div class="content"><div class="contentheader">Make Reservations</div>
+<div class="leftContent">
+Date: <br>
+Time: <br>
+# of Guests: <br>
+First Name: <br>
+Last Name: <br>
+E-mail: <br>
+Phone: <br>
+<br>
+</div>
+<div class="rightForm">
+	<form name="input" action="test2.php" method="post">
+		<input type="text" id="datepicker" name="date"><br>
+		<select size="1" name="time" id="time">
+				<option>5:00PM</option>
+				<option>5:15PM</option>
+				<option>5:30PM</option>
+				<option>5:45PM</option>
+				<option>6:00PM</option>
+				<option>6:15PM</option>
+				<option>6:30PM</option>
+				<option>6:45PM</option>
+				<option>7:00PM</option>
+				<option>7:15PM</option>
+				<option>7:30PM</option>
+				<option>7:45PM</option>
+				<option>8:00PM</option>
+				<option>8:15PM</option>
+				<option>8:30PM</option>
+				<option>8:45PM</option>
+				<option>9:00PM</option>
+		</select><br>
+		<select size="1" name="guests" id="guests">
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+				<option>6</option>
+				<option>7</option>
+				<option>8</option>
+				<option>9</option>
+				<option>10+</option>
+		</select><br>
+		<input type="text" name="firstname" id="firstname"><br>
+		<input type="text" name="lastname" id="lastname"><br>
+		<input type="email" name="email" id="email"><br>
+		<input type="tel" name="phone" id="phone"><br>
+	<input type="submit" value="Submit">
+	<input type="reset" value="Reset">
+	</form> 
+</div>
+<hr>
+	<div class="contentimg">
+		<img src="sushi-pd.jpg" alt="Sushi"/><img src="food-pd.jpg" alt="Food"/><img src="fish-bbq-pd.jpg" alt="BBQ Fish"/><img src="salmon-pd.jpg" alt="Salmon"/>
+	</div>
+	</div>
+<footer>
+	<div class="social"><a href="http://www.facebook.com"><img src="facebook-pd.png" alt="Facebook"></a></div>
+	<div class="social"><a href="http://www.twitter.com"><img src="twitter-pd.png" alt="Twitter"></a></div>
+	<div class="social"><a href="http://www.google.com"><img src="google-pd.png" alt="Google+"></a></div>
+<div class="notice"><hr>NOTICE: This web site is being used for educational purposes only, and is the sole responsibility of its creator. Any reproduction of copyrighted material complies with the fair use provision established in <a href="http://www.copyright.gov/title17/92chap1.html%23107">Section 107 of the U.S. Copyright Act.</a><br>
+For questions regarding this web site, please contact: <a href="mailto:vogtp@cwu.edu">vogtp@cwu.edu</a></div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Space Needle</title>
+<style type="text/css">
+#container {
+	position: absolute;
+	left: 100px;
+	top: 50px;
+}
+#picMask {
+	width: 719px;
+	height: 420px;
+	position: relative;
+	overflow-x: hidden;
+	overflow-y:hidden;
+	float: left;
+}
+#picHolder {
+	position: relative;
+}
+#title{
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+	font-size: xx-large;
+	text-align: center;
+}
+#smallPic{
+	position: relative;
+	float: left;
+	width: 189px;
+	height: 420px;
+	background-image:url(spaceNeedleSmall.jpg);
+}
+#outline{
+	position: relative;
+	width: 189px;
+	height: 420px;
+}
+	
+</style>
+</head>
+
+<body>
+<div id="container">
+	<div id="title">Space Needle</div>
+	<div id="picMask" onmousemove="getMoving(event)">
+		<div id="picHolder"><img src="spaceNeedle.jpg" width="719" height="1600" alt="" id="space"/>
+        </div>
+	</div>
+  <div id="smallPic"><div id="outline"><img src="outline.gif" width="189" height="110" alt=""/></div></div>
+</div>
+
+
+<script type="text/javascript">
+
+var currentPosition = 0;
+
+function getMoving(event) { 
+var currentX = event.clientY - 100; 
+if (currentX < 210 && currentPosition > -1180)
+{currentPosition = currentPosition -2;} 
+else if(currentX >210 && currentPosition< 0)
+{currentPosition = currentPosition +2;} 
+document.getElementById('picHolder').style.top = currentPosition + 'px';
+outlinePosition = (currentPosition)/3.8;
+document.getElementById('outline').style.bottom = outlinePosition + 'px';
+}
+</script>
+
+</body>
+</html>

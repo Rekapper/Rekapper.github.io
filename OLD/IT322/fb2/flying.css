@@ -1,0 +1,118 @@
+﻿.bodypadding{
+	margin: 0px 20px 20px 20px;
+}
+#nav a:link {color:#F1DC61;}
+#nav a:visited {color:#A77512;}
+#nav a:hover {color:#F51E1E;}
+#nav {
+	border: 2px dotted #800000;
+	float: left;
+	width: 10%;
+	position: fixed;
+	margin-right: 5px;
+	top: 30px;
+	background-color: rgba(97, 191, 174, 0.93);
+	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+	font-size: xx-large;
+	text-decoration: underline;
+	text-align: center;
+}
+.header{
+	border: thin double #000000;
+	background-position: center center;
+	background-image: url('logomini.png');
+	width: 498px;
+	margin: 0 auto;
+	height: 305px;
+	background-repeat: no-repeat;
+	background-color: rgba(0, 0, 0, 0.85);
+}
+.content a:link {color: #0000FF;}
+.content a:visited {color:#A7A7A4;}
+.content a:hover {color:#F51E1E;}
+
+.content{
+	float: left;
+	width: 68%;
+	left: 11%;
+	margin-right: 5px;
+	margin-left: 5px;
+	position: relative;
+}
+.content1{
+	border: thin double #000000;
+	text-align: center;
+	margin: 5px auto;
+	background-color: rgba(0, 0, 0, 0.95);
+	font-size: x-large;
+	color: #FFFFFF;
+}
+.content2{
+	border: thin double #000000;
+	margin: 5px auto;
+	background-color: rgba(0, 0, 0, 0.95);
+	font-size: x-large;
+	color: #FFFFFF;
+}
+.RightSidebar a:link {color:#F1DC61;}
+.RightSidebar a:visited {color:#A77512;}
+.RightSidebar a:hover {color:#F51E1E;}
+
+.RightSidebar{
+	border: 2px dotted #800000;
+	float: none;
+	margin-left: 5px;
+	width: 20%;
+	position: fixed;
+	left: 79%;
+	top: 30px;
+	background-color: rgba(97, 191, 174, 0.83);
+
+}
+.righthead{
+	font-size: x-large;
+	font-weight: bold;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	font-variant: small-caps;
+	border: medium dashed #FFFFFF;
+	text-align: center;
+}
+.bandcamp{
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+	border: thin dashed #FFFFFF;
+	margin: 5px auto;
+	text-align: center;
+}
+.footer a:link {color:#F1DC61;}
+.footer a:visited {color:#A77512;}
+.footer a:hover {color:#F51E1E;}
+
+.footer{
+	clear: left;
+	font-family: "Segoe UI";
+	background-color: rgba(0, 0, 0, 0.95);
+	border-top-style: solid;
+	border-top-width: thin;
+	width: 100%;
+	color: #FFFFFF;
+	font-style: italic;
+}
+body{
+	background-image: url('FB_BG.jpg');
+	background-size: 1920px 1080px;
+	background-color: #000000;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+}
+table{
+	margin:0 auto;	
+}
+td{
+	padding:20px;
+	border: 1px solid #FFFFFF;
+}
+.tableheader{
+	font-size: 30px;
+	font-weight: 600;
+	text-decoration: underline;
+}

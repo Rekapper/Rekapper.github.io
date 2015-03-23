@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Converter</title>
+<style type="text/css">
+body {
+	background: -moz-linear-gradient(45deg, rgba(201,242,227,0.7) 0%, rgba(204,242,185,0.7) 10%, rgba(206,242,155,0.69) 17%, rgba(203,208,127,0.69) 22%, rgba(201,180,105,0.64) 26%, rgba(201,162,105,0.24) 55%, rgba(201,152,105,0.46) 72%, rgba(205,239,225,0.6) 83%, rgba(199,233,181,0.75) 95%, rgba(197,231,162,0.75) 100%);
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(201,242,227,0.7)), color-stop(10%,rgba(204,242,185,0.7)), color-stop(17%,rgba(206,242,155,0.69)), color-stop(22%,rgba(203,208,127,0.69)), color-stop(26%,rgba(201,180,105,0.64)), color-stop(55%,rgba(201,162,105,0.24)), color-stop(72%,rgba(201,152,105,0.46)), color-stop(83%,rgba(205,239,225,0.6)), color-stop(95%,rgba(199,233,181,0.75)), color-stop(100%,rgba(197,231,162,0.75)));
+	background: -webkit-linear-gradient(45deg, rgba(201,242,227,0.7) 0%,rgba(204,242,185,0.7) 10%,rgba(206,242,155,0.69) 17%,rgba(203,208,127,0.69) 22%,rgba(201,180,105,0.64) 26%,rgba(201,162,105,0.24) 55%,rgba(201,152,105,0.46) 72%,rgba(205,239,225,0.6) 83%,rgba(199,233,181,0.75) 95%,rgba(197,231,162,0.75) 100%);
+	background: -o-linear-gradient(45deg, rgba(201,242,227,0.7) 0%,rgba(204,242,185,0.7) 10%,rgba(206,242,155,0.69) 17%,rgba(203,208,127,0.69) 22%,rgba(201,180,105,0.64) 26%,rgba(201,162,105,0.24) 55%,rgba(201,152,105,0.46) 72%,rgba(205,239,225,0.6) 83%,rgba(199,233,181,0.75) 95%,rgba(197,231,162,0.75) 100%);
+	background: -ms-linear-gradient(45deg, rgba(201,242,227,0.7) 0%,rgba(204,242,185,0.7) 10%,rgba(206,242,155,0.69) 17%,rgba(203,208,127,0.69) 22%,rgba(201,180,105,0.64) 26%,rgba(201,162,105,0.24) 55%,rgba(201,152,105,0.46) 72%,rgba(205,239,225,0.6) 83%,rgba(199,233,181,0.75) 95%,rgba(197,231,162,0.75) 100%);
+	background: linear-gradient(45deg, rgba(201,242,227,0.7) 0%,rgba(204,242,185,0.7) 10%,rgba(206,242,155,0.69) 17%,rgba(203,208,127,0.69) 22%,rgba(201,180,105,0.64) 26%,rgba(201,162,105,0.24) 55%,rgba(201,152,105,0.46) 72%,rgba(205,239,225,0.6) 83%,rgba(199,233,181,0.75) 95%,rgba(197,231,162,0.75) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3c9f2e3', endColorstr='#bfc5e7a2',GradientType=1 );
+	-webkit-transition: all 5s ease-in 3s;
+	-o-transition: all 5s ease-in 3s;
+	transition: all 5s ease-in 3s;
+}
+body:active {
+	background-color: rgba(200,6,6,0.79);
+	-webkit-box-shadow: 10px 0px;
+	box-shadow: 10px 0px;
+}
+#convertbox {
+	width: 60%;
+	height: 40%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(157,184,207,0.23);
+	margin: auto;
+	border: medium solid rgba(124,170,213,0.65);
+	border-radius: 20px;
+	border-collapse: collapse;
+	-webkit-box-shadow: 10px 15px 5px 3px rgba(158,107,43,0.56);
+	box-shadow: 10px 15px 5px 3px rgba(158,107,43,0.56);
+	text-align: center;
+	-webkit-transition: all 5s linear;
+	-o-transition: all 5s linear;
+	transition: all 5s linear;
+}
+body:hover {
+	background-color: rgba(248,155,22,0.68);
+}
+body:focus {
+	background-color: rgba(219,119,7,0.81);
+}
+#convertbox:hover {
+	background-color: rgba(88,255,231,0.6);
+}
+#output {
+	border-top: thin solid rgba(250,82,85,0.83);
+	font-weight: 200;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-size: large;
+}
+</style>
+</head>
+<body>
+<div id="convertbox">
+<h1>Convert your :</h1>
+<div>
+<label>Enter a Value:</label>
+<input name="Value" type="text" id="Value"></input>
+<select name="convertselect" id="convertselect" onChange="validate()"><option value="Convert">Convert</option><option value="MtoK">Miles to Km</option><option value="KtoM">Km to Miles</option></select><br><br>
+<div id="output"></div>
+</div>
+</div>
+<script>
+NumBox = document.getElementById("Value");
+out = document.querySelector("#output");
+function validate(){
+ if(isNaN(Value.value)){
+	alert("Please Enter a Number");
+	NumBox.value = "";
+	NumBox.focus();
+	}
+	else{convert();}
+}
+function convert(){
+var converter = document.getElementById("convertselect");
+var c = converter.options[converter.selectedIndex].value;
+if (c === "MtoK"){convertMtoK();}
+	else if (c === "KtoM"){convertKtoM();}
+	else {}
+}
+function convertMtoK(){	
+	M = Value.value;
+	KM = M*1.609344;
+	KM = (Math.round(KM*100))/100;
+	out.innerHTML = M + " Miles is " +KM+ " Kilometers";
+	NumBox.value = "";
+	NumBox.focus();
+}
+function convertKtoM(){	
+	KM = Value.value;
+	M = KM*0.62137119;
+	M = (Math.round(M*100))/100;
+	out.innerHTML = KM + " Kilometers is " +M+ " Miles";
+	NumBox.value = "";
+	NumBox.focus();
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+@charset "utf-8";
+.ui-header  {
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	margin: 0 auto;
+	width: 90%;
+	background-color: #B00002;
+}
+.ui-page-theme-a .ui-bar-inherit {
+	background-color: rgba(0,0,0,0.47);
+
+}
+.ui-page-theme-a .ui-panel-wrapper {
+	background-image: -webkit-linear-gradient(0deg,rgba(147,248,237,0.56) 0%,rgba(184,234,255,0.59) 26.94%,rgba(159,255,253,0.72) 66.32%,rgba(0,255,235,0.61) 100%);
+	background-image: -moz-linear-gradient(0deg,rgba(147,248,237,0.56) 0%,rgba(184,234,255,0.59) 26.94%,rgba(159,255,253,0.72) 66.32%,rgba(0,255,235,0.61) 100%);
+	background-image: -o-linear-gradient(0deg,rgba(147,248,237,0.56) 0%,rgba(184,234,255,0.59) 26.94%,rgba(159,255,253,0.72) 66.32%,rgba(0,255,235,0.61) 100%);
+	background-image: linear-gradient(90deg,rgba(147,248,237,0.56) 0%,rgba(184,234,255,0.59) 26.94%,rgba(159,255,253,0.72) 66.32%,rgba(0,255,235,0.61) 100%);
+}
+
+.ui-footer {
+	margin: 0 auto;
+	width: 90%;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+#page1 {
+	background-image: -webkit-linear-gradient(270deg,rgba(147,248,237,0.56) 0%,rgba(184,234,255,0.59) 26.94%,rgba(159,255,253,0.72) 66.32%,rgba(0,255,235,0.61) 100%);
+	background-image: -moz-linear-gradient(270deg,rgba(147,248,237,0.56) 0%,rgba(184,234,255,0.59) 26.94%,rgba(159,255,253,0.72) 66.32%,rgba(0,255,235,0.61) 100%);
+	background-image: -o-linear-gradient(270deg,rgba(147,248,237,0.56) 0%,rgba(184,234,255,0.59) 26.94%,rgba(159,255,253,0.72) 66.32%,rgba(0,255,235,0.61) 100%);
+	background-image: linear-gradient(180deg,rgba(147,248,237,0.56) 0%,rgba(184,234,255,0.59) 26.94%,rgba(159,255,253,0.72) 66.32%,rgba(0,255,235,0.61) 100%);
+
+}
+.ui-page-theme-a  .ui-btn  {
+	background-color: rgba(255,255,255,0.10);
+}
+#menu{
+border-top-left-radius: 50px;
+}
+#lftbtn{
+border-top-left-radius: 50px;
+}
+#rgtbtn{
+border-top-right-radius: 50px;
+}
+.ui-content{
+margin:0 auto;
+width:75%;
+background-color: rgba(0,0,0,0.00);
+}
+.ui-listview > li > a.ui-btn {
+	margin: 0 auto;
+}
+#map-canvas {
+	margin: 0;
+	height: 200px;
+	padding: 0;
+	width: 100%;
+}

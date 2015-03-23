@@ -1,0 +1,46 @@
+[1116/203005:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1116/203005:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1116/203006:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1116/203007:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[1116/203009:INFO:CONSOLE(0)] "event.returnValue is deprecated. Please use the standard event.preventDefault() instead.", source:  (0)
+[1116/203016:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[1116/203050:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[1116/203058:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1116/203459:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1116/203459:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1116/203500:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1116/203501:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[1116/203502:INFO:CONSOLE(0)] "event.returnValue is deprecated. Please use the standard event.preventDefault() instead.", source:  (0)
+[1116/203510:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[1116/204446:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1116/204446:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1116/204447:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1116/204448:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[1116/204450:INFO:CONSOLE(0)] "event.returnValue is deprecated. Please use the standard event.preventDefault() instead.", source:  (0)
+[1116/204457:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[1116/204511:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1116/204529:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[1116/205354:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1116/205354:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1116/205355:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1116/205356:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[1116/205357:INFO:CONSOLE(0)] "event.returnValue is deprecated. Please use the standard event.preventDefault() instead.", source:  (0)
+[1116/205405:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[1116/205406:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1116/205425:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1116/205426:INFO:CONSOLE(135)] "<section></section><br><section style="clear: both;"></section><div class="noTemplatesView">You don't have any templates!  Load or create a template file to get started.</div>", source: http://127.0.0.1:54321/edgeResources/template_chooser/templatechooser.js (135)
+[1116/205441:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1116/205441:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[1116/205441:INFO:CONSOLE(0)] "event.returnValue is deprecated. Please use the standard event.preventDefault() instead.", source:  (0)
+[1116/205448:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1116/205509:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1116/205607:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1116/205651:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[1116/210757:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1116/210757:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1116/210757:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1116/210757:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1116/210758:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[1116/210759:INFO:CONSOLE(0)] "event.returnValue is deprecated. Please use the standard event.preventDefault() instead.", source:  (0)
+[1116/210800:INFO:CONSOLE(0)] "event.returnValue is deprecated. Please use the standard event.preventDefault() instead.", source:  (0)
+[1116/210807:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2

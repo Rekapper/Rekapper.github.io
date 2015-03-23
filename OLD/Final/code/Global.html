@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Global Variables</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="center">
+<div id="title">Global Variables</div>
+<div id="define">Global Variables are used to keep a variable consistent throughout a webpage and all of the script in the case of javascript used on webpages. For example in the code below the while the call for the variable on the button press is within the function, the scope of the variable is outside of that function and can be called everywhere</div>
+<div id="codeExample">var Global = "Global";<br>function Alert(){<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(Global);<br>
+}
+</div>
+<div id="code"><input type="button" onClick="Alert()" value="Click to Show Alert" autofocus></div>
+</div>
+</body>
+<script type="text/javascript">
+var Global = "Global";
+function Alert(){
+		alert(Global);
+}
+</script>
+</html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SlideShow Button</title>
+</head>
+<body>
+<img src="picArray[0].src" width="540" height="405" alt="" id="displayIT"/>
+<br><input type="button" id="button1" value="Stop the Show" onClick="toggleTheShow()">
+<script>
+var picArray = new Array(5);
+picArray[0] = new Image;
+picArray[0].src = "images/mountain1.jpg";
+picArray[1] = new Image;
+picArray[1].src = "images/mountain2.jpg";
+picArray[2] = new Image;
+picArray[2].src = "images/mountain3.jpg";
+picArray[3] = new Image;
+picArray[3].src = "images/mountain4.jpg";
+picArray[4] = new Image;
+picArray[4].src = "images/mountain5.jpg";
+
+var index = 0;
+var slideshow = setInterval(function(){runit()},1000);
+var running = true;
+var startstop = document.getElementById("button1");
+function runit(){
+document.displayIT.src = picArray[index].src;
+index++;
+if(index==5){index = 0;}
+//setTimeout("runit()",1000);
+return;
+}
+
+function toggleTheShow(){
+if(running){
+	clearInterval(slideshow);
+	startstop.value = "Start the Show";
+	running = false;
+	}
+else{slideshow = setInterval(function(){runit()},1000);
+	running = true;
+	startstop.value = "Stop the Show";
+}
+}
+</script>
+</body>
+</html>

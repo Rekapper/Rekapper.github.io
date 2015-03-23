@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot>
+<menu>
+<ID>1</ID>
+<dish>Lemon Salmon</dish>
+<description>Salmon sautéed or grilled flavored with rich fresh lemons.</description>
+<price>$21</price>
+<appetizer>0</appetizer>
+<entree>1</entree>
+<dessert>0</dessert>
+<beverage>0</beverage>
+</menu>
+<menu>
+<ID>2</ID>
+<dish>Crab Cake</dish>
+<description>Fresh crab cakes made from scratch from the best of Alaskan crab.</description>
+<price>$10</price>
+<appetizer>1</appetizer>
+<entree>0</entree>
+<dessert>0</dessert>
+<beverage>0</beverage>
+</menu>
+<menu>
+<ID>3</ID>
+<dish>Key Lime Tart</dish>
+<description>A Key Lime Tart filled with fresh line and creamy cream.</description>
+<price>$8</price>
+<appetizer>0</appetizer>
+<entree>0</entree>
+<dessert>1</dessert>
+<beverage>0</beverage>
+</menu>
+<menu>
+<ID>4</ID>
+<dish>Soda Pops</dish>
+<description>Various types such as: Coke, Sprite, Dr. Pepper</description>
+<price>$2</price>
+<appetizer>0</appetizer>
+<entree>0</entree>
+<dessert>0</dessert>
+<beverage>1</beverage>
+</menu>
+<menu>
+<ID>5</ID>
+<dish>Crab Legs</dish>
+<description>Steamed Alaskan crab in a nice garlic and butter spread</description>
+<price>$15</price>
+<appetizer>1</appetizer>
+<entree>0</entree>
+<dessert>0</dessert>
+<beverage>0</beverage>
+</menu>
+<menu>
+<ID>6</ID>
+<dish>Tuna Rolls</dish>
+<description>Tuna mixed with wasabi all mixed in a wrap of seaweed.</description>
+<price>$10</price>
+<appetizer>1</appetizer>
+<entree>0</entree>
+<dessert>0</dessert>
+<beverage>0</beverage>
+</menu>
+<menu>
+<ID>7</ID>
+<dish>Lobster Shepherd's Pie</dish>
+<description>Lobster mixed with fresh Idaho potatoes, corn and tomato.</description>
+<price>$25</price>
+<appetizer>0</appetizer>
+<entree>1</entree>
+<dessert>0</dessert>
+<beverage>0</beverage>
+</menu>
+<menu>
+<ID>8</ID>
+<dish>Surf and Turf</dish>
+<description>Nice fresh cut of steak and a full piece of the catch of the day.</description>
+<price>$35</price>
+<appetizer>0</appetizer>
+<entree>1</entree>
+<dessert>0</dessert>
+<beverage>0</beverage>
+</menu>
+<menu>
+<ID>9</ID>
+<dish>Sushi Rolls of the Day</dish>
+<description>Ask the server for more information about what the chefs have fresh for today.</description>
+<price>$30-20</price>
+<appetizer>0</appetizer>
+<entree>1</entree>
+<dessert>0</dessert>
+<beverage>0</beverage>
+</menu>
+<menu>
+<ID>10</ID>
+<dish>Catch of the Day</dish>
+<description>Freshest of the fresh fish caught today, ask the server for more information.</description>
+<price>$30</price>
+<appetizer>0</appetizer>
+<entree>1</entree>
+<dessert>0</dessert>
+<beverage>0</beverage>
+</menu>
+<menu>
+<ID>11</ID>
+<dish>Chocolate Sunday</dish>
+<description>A layer of smooth vanilla ice cream filled with a layer of hot fudge layered overtop.</description>
+<price>$5</price>
+<appetizer>0</appetizer>
+<entree>0</entree>
+<dessert>1</dessert>
+<beverage>0</beverage>
+</menu>
+<menu>
+<ID>12</ID>
+<dish>Fish Gruel</dish>
+<description>Tomato juice mixed with a variety of fruits to produce a sweet and sour drink</description>
+<price>$4</price>
+<appetizer>0</appetizer>
+<entree>0</entree>
+<dessert>0</dessert>
+<beverage>1</beverage>
+</menu>
+</dataroot>

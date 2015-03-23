@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Directions</title>
+<!-- Set screen width and scale based on end user -->
+<meta name="viewport" content="device-width, initial-scale=1">
+<meta content ="en" http-equiv="content-language">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script type="text/javascript">
+$(document).on("pageshow","#map_page",function(){
+initialize();
+calculateRoute();
+});
+$(document).on('click','#submit',function(e){
+	e.preventDefault();
+	$('#theDirections').empty();
+	calculateRoute();
+	$.mobile.changePage('#directions');
+});
+var directionsDisplay;
+var directionsService = new google.maps.DirectionsService();
+var map;
+function initialize(){
+directionsDisplay = new google.maps.DirectionsRenderer();
+var mapCenter = new google.maps.LatLng(47,-120.5);
+var mapOptions = {zoom:8,mapTypeId:google.maps.MapTypeId.ROADMAP,center:mapCenter}
+map=new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+directionsDisplay.setMap(map);
+directionsDisplay.setPanel(document.getElementById("theDirections"));
+}
+function calculateRoute(){
+	var selectedMode=$('#mode').val(),
+	start=$('#from').val(),
+	end=$('#to').val();
+	if(start==''|| end ==''){$("#theDirections").append("Location is Invalid");return;}
+	else{var request ={origin:start,destination:end,travelMode:google.maps.DirectionsTravelMode[selectedMode]};
+	directionsService.route(request,function(response,status){
+		if(status==google.maps.DirectionsStatus.OK){
+			directionsDisplay.setDirections(response);
+			//$("#theDirections").show();
+			}
+			//else{$("#theDirections").hide();}
+			});
+}}
+//google.maps.event.addDomListener(window,'load',initialize);
+</script>
+</head>
+<body>
+<div data-role="page" id="map_page">
+  <div data-role="header" data-position="fixed">
+    <h1>Directions</h1>
+    <div data-role="navbar">
+    <ul>
+    <li><a href="#map_page" class="ui-btn-active ui-state-persist">Map</a></li>
+    <li><a href="#locations">Locations</a></li>
+    <li><a href="#directions">Directions</a></li>
+    </ul>
+    </div>
+  </div>
+  <div class="ui-content" role="main">
+	<div id="map_canvas" style="height:300px;"></div>
+</div>
+<!--  <div data-role="footer" data-position="fixed">
+  	<h4>Map</h4>
+  </div>-->
+</div>
+<div data-role="page" id="locations">
+  <div data-role="header" data-position="fixed"><h1>Directions</h1>
+  </div>
+      <div data-role="navbar">
+    <ul>
+    <li><a href="#map_page">Map</a></li>
+    <li><a href="#locations" class="ui-btn-active ui-state-persist">Locations</a></li>
+    <li><a href="#directions">Directions</a></li>
+    </ul>
+    </div>
+  <div class="ui-content" role="main">
+  	<div data-role="fieldcontain">
+	<label for="from">From</label>
+    <input type="text" id="from" value="Ellensburg, WA" data-clear-btn="true"/>
+    </div>
+   	<div data-role="fieldcontain">
+	<label for="to">To</label>
+    <input type="text" id="to" value="Seattle, WA" data-clear-btn="true"/>
+    </div>
+    <div data-role="fieldcontain">
+    <label for="mode" class="select">Transportation Method</label>
+    <select name="select-choice-0" id="mode">
+    	<option value="DRIVING">Driving</option>
+        <option value="WALKING">Walking</option>
+        <option value="BICYCLING">Bicycling</option>
+        <option value="TRANSIT">Transit</option>
+    </select>
+    </div>
+    <a data-icon="search" data-role="button" href="#" id="submit">Get Directions</a>
+  </div>
+<!--  <div data-role="footer" data-position="fixed">
+  	<h4>Locations</h4>
+  </div>-->
+</div>
+<div data-role="page" id="directions">
+  <div data-role="header" data-position="fixed">
+    <h1>Directions</h1>
+     <div data-role="navbar">
+    <ul>
+    <li><a href="#map_page">Map</a></li>
+    <li><a href="#locations">Locations</a></li>
+    <li><a href="#directions" class="ui-btn-active ui-state-persist">Directions</a></li>
+    </ul>
+    </div>
+  </div>
+  <div class="ui-content" role="main" id="theDirections">
+  </div>
+<!--  <div data-role="footer" data-position="fixed">
+  	<h4>Directions</h4>
+  </div>-->
+</div>
+</body>
+</html>

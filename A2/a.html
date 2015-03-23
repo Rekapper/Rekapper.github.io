@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Bat Land</title>
+<!-- Set screen width and scale based on end user -->
+<meta name="viewport" content="device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+.bigText{
+font-size:xx-large;
+color:#9D0306
+}
+</style>
+<script>
+//Variables
+//Seasonal Tickets
+var sAdult=0;
+var sChild=0;
+//Daily Tickets
+var dAdult=0;
+var dChild=0;
+var tax=0.08;  
+var total=0;
+function Calc(){
+sAdult = $("#SA").val();
+sChild = $("#SC").val();
+dAdult = $("#DA").val();
+dChild = $("#DC").val();
+total = parseFloat((sAdult*300+sChild*200+dAdult*50+dChild*30)*(1+tax));
+$('#footer1').html('<div align="center"><h1>Total Cost: $'+total.toFixed(2))+'</h1></div>';
+$('#footer').html('<div align="center"><h1>Total Cost: $'+total.toFixed(2))+'</h1></div>';
+$('#footer2').html('<div align="center"><h1>Total Cost: $'+total.toFixed(2))+'</h1></div>';
+}
+function discount(){
+var discount = 0.9;
+total = parseFloat(total*discount);
+$('#footer2').html('<div align="center"><h1>Discounted Cost: $'+total.toFixed(2))+'</h1></div>';
+}
+</script>
+</head>
+<body>
+<div data-role="page" id="page" data-theme="b">
+  <div data-role="panel" id="myPanel"> 
+    <h2>Bat Land Menu</h2>
+    <a href="#About" class="ui-btn ui-corner-all ui-shadow" id="Aboutclick">About Bat Land</a>
+	<a href="#map" class="ui-btn ui-corner-all ui-shadow" id="map">Bat Land Map</a>
+	<a href="#page2" class="ui-btn ui-corner-all ui-shadow" id="BuyTickets">Buy Tickets</a>
+  </div> 
+  <div data-role="header">
+    <a href="#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Menu</a>
+    <h1>Bat Land</h1>
+  </div>
+ <div data-role="main" class="ui-content"> 
+ <img style="margin: 0px auto;display:block" src="bat.png" alt="Bat Land Logo" height="200" width="640" >
+  <a href="#page2" class="ui-btn ui-corner-all" id="BuyTickets2">Buy Tickets</a>
+  <a href="#map" class="ui-btn ui-corner-all ui-shadow" id="map">Bat Land Map</a>
+      
+  </div>
+
+  <div data-role="footer" data-position="fixed" id="footer">
+  	<h1>Cost: $</h1>
+  </div>
+</div>
+
+
+<div data-role="page" id="page2" data-theme="b">
+  <div data-role="header">
+  <a href="#page" class="ui-btn ui-icon-home ui-btn-icon-right">Home</a>
+    <h1>Bat Land</h1>
+  </div>
+
+  <div data-role="collapsible" data-collapsed="false">
+<h3>Seasonal Tickets</h3>
+<form>
+<fieldset data-role="controlgroup" data-type="horizontal">
+    <legend>Amount of Tickets:</legend>
+    <label for="SA">Adult Tickets:</label>
+    <select name="SA" id="SA" onChange="Calc()">
+        <option value="0">Adult</option>
+		<option value="0">0 Adults</option>
+        <option value="1">1 Adult</option>
+        <option value="2">2 Adults</option>
+        <option value="3">3 Adults</option>
+        <option value="4">4 Adults</option>
+        <option value="5">5 Adults</option>
+        <option value="6">6 Adults</option>
+    </select>
+    <label for="SC">Children Tickets:</label>
+    <select name="SC" id="SC" onChange="Calc()">
+        <option value="0">Children</option>
+		<option value="0">0 Children</option>
+        <option value="1">1 Child</option>
+        <option value="2">2 Children</option>
+        <option value="3">3 Children</option>
+        <option value="4">4 Children</option>
+        <option value="5">5 Children</option>
+        <option value="6">6 Children</option>
+    </select>
+</fieldset>
+</form>
+</div>
+  <div data-role="collapsible" data-collapsed="false">
+<h3>Daily Tickets</h3>
+<form>
+<fieldset data-role="controlgroup" data-type="horizontal">
+    <legend>Amount of Tickets:</legend>
+    <label for="DA">Adult Tickets:</label>
+    <select name="DA" id="DA" onChange="Calc()">
+        <option value="0">Adult</option>
+		<option value="0">0 Adults</option>
+        <option value="1">1 Adult</option>
+        <option value="2">2 Adults</option>
+        <option value="3">3 Adults</option>
+        <option value="4">4 Adults</option>
+        <option value="5">5 Adults</option>
+        <option value="6">6 Adults</option>
+    </select>
+    <label for="DC">Children Tickets:</label>
+    <select name="DC" id="DC" onChange="Calc()">
+        <option value="0">Children</option>
+		<option value="0">0 Children</option>
+        <option value="1">1 Child</option>
+        <option value="2">2 Children</option>
+        <option value="3">3 Children</option>
+        <option value="4">4 Children</option>
+        <option value="5">5 Children</option>
+        <option value="6">6 Children</option>
+    </select>
+</fieldset>
+</form>
+</div>
+<div align="center">*Ticket Prices are subject to change.</div>
+<div align="center">**If more then 6 tickets are needed call us at: (###)###-####</div>
+<div align="center" data-role="controlgroup" data-type="horizontal"><a href="#page3" class="ui-btn ui-corner-all" id="checkout" onclick=discount()>Pay with Credit Card</a><a href="#page3" class="ui-btn ui-corner-all" id="paypal" onclick=discount()>Pay with Paypal</a></div>
+  <div data-role="footer" data-position="fixed" id="footer1">
+  	<h1>Cost: $</h1>
+  </div>
+</div>
+<div data-role="page" id="page3" data-theme="b">
+  <div data-role="header">
+  <a href="#page2" class="ui-btn ui-icon-left" onclick=Calc()>Back</a>
+  <a href="#page" class="ui-btn ui-icon-home ui-btn-icon-right">Home</a>
+    <h1>Bat Land</h1>
+  </div>
+  <div data-role="main" class="ui-content">Sorry, you have found the incomplete checkout page. For your trouble, be sure to call us at (###)###-#### so we can help you book your tickets, for your trouble we are offering a 10% discount as you can see below.</div>
+ <div data-role="footer" data-position="fixed" id="footer2">
+  	<h1>Cost: $</h1>
+  </div> 
+</div>
+<div data-role="page" id="About" data-theme="b">
+  <div data-role="header">
+  <a href="#page" class="ui-btn ui-icon-home ui-btn-icon-right">Home</a>
+    <h1>Bat Land</h1>
+  </div>
+  <div data-role="main" class="ui-content">This historic park is centred inside of an actual bat cave.<br><br>For more information call us at (###)###-#### so we can help you.</div>
+ <div data-role="footer" data-position="fixed" id="footer3">
+  	<h1>About Bat Land</h1>
+  </div> 
+</div>
+<div data-role="page" id="map" data-theme="b">
+  <div data-role="header">
+  <a href="#page" class="ui-btn ui-icon-home ui-btn-icon-right">Home</a>
+    <h1>Bat Land Map</h1>
+  </div>
+  <div data-role="main" class="ui-content">Sorry, this feature is coming soon, with the features of locating where you currently are in the cave.</div>
+ <div data-role="footer" data-position="fixed" id="footer4">
+  	<h1>Bat Land Map</h1>
+  </div> 
+</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Apollo</title>
+<meta name="viewport" content="device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="modelview.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script>
+var map;
+function initialize(){
+	var mapOptions = {
+		zoom:10,
+		center:new google.maps.LatLng(28.4556,-80.5278),
+		mapTypeId:google.maps.MapTypeId.ROADMAP
+		};
+map=new google.maps.Map(document.getElementById('map-canvas'), mapOptions);}
+google.maps.event.addDomListener(window, 'load',initialize);
+</script>
+<style>
+#map-canvas {margin:0; width:100%; height:240px; padding: 0;}
+</style>
+</head>
+<body>
+<div data-role="page" id="page">
+<div data-role="header"><div align="center"><img src="ApolloTitle.jpg" style="width:100%;"></div></div>
+<div class="ui-content" role="main">The Apollo missions had a single purpose. President John F. Kennedy set the goal in a speech to a joint session of Congress on May 25, 1961.
+    "First, I believe that this nation should commit itself to achieving the goal, before this decade is out, of landing a man on the moon and returning him safely to the earth. No single space project in this period will be more impressive to mankind, or more important for the long-range exploration of space; and none will be so difficult or expensive to accomplish.</div>
+<div id="map-canvas"></div>
+<div><a href="#page1" class="ui-btn ui-btn-corner-all" rel="external">Flights go here!</a></div></div>
+<div data-role="page" id="page1">
+  <div data-role="header">
+    <div align="center"><img src="ApolloTitle.jpg" style="width:100%;"></div>
+  </div>
+  <div class="ui-content" role="main">
+	<div id="inventoryList" data-filter="true" ul data-role="listview">Loading</div>
+</div>
+  <div data-role="footer" data-position="fixed">
+  	<h4>Apollo Missions</h4>
+  </div>
+</div>
+</body>
+</html>

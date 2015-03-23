@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>IfElseIfElse</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="center">
+<div id="title">If Else If Else</div>
+<div id="define">Javascript handles conditional statements through conditionals in this case through if, else if, else.</div>
+<div id="codeExample">function Alert(){<br>
+		if (document.getElementById('Radio1').checked){alert("Radio1 Selected");}<br>
+	else if (document.getElementById('Radio2').checked){	alert("Radio2 Selected");}<br>
+else{alert("radio3 Selected or no radio's selected")}}
+</div>
+<div id="code">
+  <p>
+    <label>
+      <input type="radio" name="RadioGroup1" value="radio1" id="Radio1">
+      Radio1</label>
+    <br>
+    <label>
+      <input type="radio" name="RadioGroup1" value="radio2" id="Radio2">
+      Radio2</label>
+    <br>
+    <label>
+      <input type="radio" name="RadioGroup1" value="radio3" id="Radio3">
+      Radio3</label>
+    <br>
+  </p>
+<input type="button" onClick="Alert()" value="Click to Show Radio button selected" autofocus></div>
+</div>
+</body>
+<script type="text/javascript">
+function Alert(){
+		if (document.getElementById('Radio1').checked){
+		alert("Radio1 Selected");
+}
+	else if (document.getElementById('Radio2').checked){
+		alert("Radio2 Selected");
+}
+else{alert("radio3 Selected or no radio's selected")}}
+</script>
+</html>

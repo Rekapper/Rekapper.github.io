@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" generated="2013-01-28T08:48:44">
+<step>
+<ID>1</ID>
+<Title>Project Scope</Title>
+<Notes>Project focuses on...</Notes>
+<img>vn.png</img>
+<thelink>#page1</thelink>
+</step>
+<step>
+<ID>2</ID>
+<Title>Template Design</Title>
+<Notes>Drawn out</Notes>
+<img>vn.png</img>
+<thelink>#page2</thelink>
+</step>
+<step>
+<ID>3</ID>
+<Title>Frame Works Design</Title>
+<Notes>Physical HTML frames</Notes>
+<img>fm.jpg</img>
+<thelink>#page3</thelink>
+</step>
+<step>
+<ID>4</ID>
+<Title>SoundcloudAPI</Title>
+<Notes>Utalizing the soundcloud API for use of pulling soundcloud music off of server per user</Notes>
+<img>sc.png</img>
+<thelink>https://developers.soundcloud.com/docs/api/guide</thelink>
+</step>
+<step>
+<ID>5</ID>
+<Title>GeoLocate to Store Locations</Title>
+<Notes>Using Google API to find nearest store with music avaliable</Notes>
+<img>gm.png</img>
+<thelink>https://developers.google.com/maps/documentation/javascript</thelink>
+</step>
+<step>
+<ID>6</ID>
+<Title>LocalStorage + Online Store</Title>
+<Notes>Easy way to access/download and preview music using local storage for the purpose of keeping track of which samples they selected to access</Notes>
+<img>ct.png</img>
+<thelink>#page4</thelink>
+</step>
+<step>
+<ID>7</ID>
+<Title>Preorder/Request System</Title>
+<Notes>(Possible bonus feature)</Notes>
+<img>ct.png</img>
+<thelink>#pagePre</thelink>
+</step>
+<step>
+<ID>8</ID>
+<Title>Rating System</Title>
+<Notes>Local storage and server storage of ratings per album in order to better showcase samples</Notes>
+<img>sr.png</img>
+<thelink>#pageRate</thelink>
+</step>
+<step>
+<ID>9</ID>
+<Title>Twiter API</Title>
+<Notes>(Possible bonus feature)</Notes>
+<img>tw.png</img>
+<thelink>https://dev.twitter.com/rest/public</thelink>
+</step>
+<step>
+<ID>10</ID>
+<Title>Facebook API</Title>
+<Notes>(Possible bonus feature)</Notes>
+<img>FB.png</img>
+<thelink>https://developers.facebook.com</thelink>
+</step>
+<step>
+<ID>11</ID>
+<Title>Alternative Themeing System with localstorage preferences</Title>
+<Notes>A or B theme for user preferences</Notes>
+<img>gm.png</img>
+<thelink>#pageTheme</thelink>
+</step>
+</dataroot>

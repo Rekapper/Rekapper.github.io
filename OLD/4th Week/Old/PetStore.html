@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>PetStore</title>
+<script src="http://code.jquery.com/jquery-1.9.1.js" type="text/javascript"></script>
+<style type="text/css">
+body{
+	background: -webkit-linear-gradient(left, rgba(255,0,0,0), rgba(255,0,0,1)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, rgba(255,0,0,0), rgba(255,0,0,1)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, rgba(255,0,0,0), rgba(255,0,0,1)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); /* Standard syntax (must be last) */
+	-webkit-transition: all 3s;
+	-o-transition: all 3s;
+	transition: all 3s;
+}
+#container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+	background-color: #317A29;
+	text-align: center;
+	-webkit-transition: all 5s ease-in;
+	-o-transition: all 5s ease-in;
+	transition: all 5s ease-in;
+}
+#title  {
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+	color: #350A0B;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+	font-weight: lighter;
+	font-size: xx-large;
+	text-align: center;
+	background-color: #8BB47C;
+}
+#inputs {
+	float: left;
+}
+#addremove #addAPet #inputs {
+	text-align: left;
+}
+#container #addremove #addAPet {
+}
+#container #addremove #endFloat {
+	float: none;
+	clear: both;
+}
+#container #currentInventory {
+	text-align: left;
+}
+#container:hover {
+	background-color: #52A7C1;
+}
+body:hover {
+	background-color: #58ADDC;
+}
+</style>
+<!--<link href="../jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="../jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="../jQueryAssets/jquery.ui.accordion.min.css" rel="stylesheet" type="text/css">
+<script src="../jQueryAssets/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="../jQueryAssets/jquery-ui-1.9.2.accordion.custom.min.js" type="text/javascript"></script>-->
+</head>
+<body>
+<div id="container">
+	<div id="title">
+    <h2>BestBirds</h2>
+    <h5>&quot;We only fly with the best&quot;</h5>
+    </div>
+<div id="currentInventory">
+Current Inventory:
+  <div id="answer"></div>
+</div>
+<div id="addremove">
+<div id="addAPet">
+
+  <div id="inputs"><form>
+    <p>Add a new pet:<br>
+    <label>Pet Type:</label>
+	<select name="type" id="type">
+    <option value="bird">Bird</option>
+    <option value="mammal">Mammal</option>
+    <option value="reptiles">Reptiles</option>
+    <option value="fish">Fish</option>
+    </select><br>
+      <label>Pet's Breed (as Plural):
+        </label>
+      <input name="Breed" type="text" id="Breed"><br>
+      <label>Pet's Quantity:&nbsp;&nbsp;
+        </label>
+      <input name="Quantity" type="text" id="Quantity">
+      </p>
+    <p>
+      <input type="button" name="button" id="button" value="Submit" onClick="AddAPet()">
+      </p>
+  </form></div>
+</div>
+<div id="deleteAPet">
+<form action="">
+Sort by Type: <input type="radio" id="sortType" name="sort" checked onClick="sorter()"><br>
+Sort by Breed: <input type="radio" id="sortBreed" name="sort" onClick="sorter()"><br>
+Sort by Quantity: <input type="radio" id="sortQuantity" name="sort" onClick="sorter()"><br>
+</form>
+  <p>&nbsp;</p>
+  <p>	Remove a Pet:
+    <select name="dropPet" id="dropPet" onChange="DeletePet()">
+    <option value="delete">Remove a Breed</option>
+    </select><br>
+  </p>
+</div>
+<div id="endFloat"></div></div></div></div>
+<script>
+//addASpecies()
+//edit_Quantity()
+//listOut() IfTypeisZeroDontList ListbyAccordion per sort
+//ifzeroRemoveSpecies()
+//Title with add
+//Quantity box
+//List 
+//Validate Breed add to array only if not already
+//DeleteButton
+//Breed select vs add in
+//
+var a = document.getElementById("answer");
+var selectPet = document.getElementById("dropPet");
+var pets = [];
+//var t = document.getElementByID("typesort");
+//var b = document.getElementById("breedsort");
+//var q = document.getElementById("quantitysort");
+//Pet Constructor
+function Pet(type,breed,quantity){
+	this.type = type;
+	this.breed = breed;
+	this.quantity = quantity;
+}
+function AddAPet(){
+var formType = document.getElementById("type").value;
+var formBreed = document.getElementById("Breed").value;
+var formQuantity = document.getElementById("Quantity").value;
+var newPet = new Pet(formType,formBreed,formQuantity);
+pets.push(newPet);
+sorter();
+}
+
+
+// START HERERERERERER
+function validateRepeat(){
+if($.inArray(formBreed, pets) > 0){alert("already exists")}
+else{
+}
+}
+function editQ(){
+var selectPetLength = document.getElementById('EditPet').length;
+for (var i = 0; i < selectPetLength; i++) {
+	if (selectPetLength[i].selected) {
+		//add -1 to the splice to get the first bird!!!
+		//if(pets[i].breed == formBreed)
+		//{pets.splice(i,1);} if(formAmount !=0){var new---
+		pets.splice(i-1,1);
+		pets.sort(sortByName);
+		}
+}
+}
+function clearPet(){
+	//i>=1 to keep 'delete bird' intact
+	 for (var i=selectBird.options.length-1; i>=1; i--)
+	{
+			selectBird.remove(i);
+	}
+}
+function sorter(){
+if(document.getElementById("sortBreed").checked){pets.sort(sortByBreed);}
+else if(document.getElementById("sortQuantity").checked){pets.sort(sortByQuantity);}
+else {pets.sort(sortByType);}
+displayList();
+}
+function displayList(){
+	a.innerHTML="";
+	for(var i=0; i < pets.length; i++){
+		a.innerHTML += pets[i].quantity + " " + pets[i].breed +"<br>";}
+}
+function sortByType(pet1,pet2){
+	pets.sort(sortByBreed);
+	if(pet1.type > pet2.type){return 1;}
+	else if (pet1.type===pet2.type){return 0;}
+	else{return -1;}
+}
+function sortByBreed(pet1,pet2){
+	if(pet1.breed > pet2.breed){return 1;}
+	else if (pet1.breed===pet2.breed){return 0;}
+	else{return -1;}
+}
+function sortByQuantity(pet1,pet2){
+	if(pet1.quantity > pet2.quantity){return 1;}
+	else if (pet1.quantity===pet2.quantity){return 0;}
+	else{return -1;}
+}
+</script>
+</body>
+</html>

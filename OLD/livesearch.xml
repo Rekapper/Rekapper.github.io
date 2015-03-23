@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" generated="2014-10-27T08:13:57">
+<Term>
+<ID>1</ID>
+<Name>Assignment 1 - Best Bird Site</Name>
+<Notes>Finish the BestBird site started in class. Error trap the inputs. Clear the form when appropriate. Due: October 27, 2014</Notes>
+<thelink>http://www.cwu.edu/~vogtp/4th%20Week/BirdInventoryV1.html</thelink>
+</Term>
+<Term>
+<ID>2</ID>
+<Name>Assignment 2 - PetShop</Name>
+<Notes>Create an inventory list system (based on Assignment #1) that will cover all of the birds, mammals, reptiles, and fish at a pet store. Inventory items can be added, deleted and sorted by quantity, species, and type. Due: November 18, 2014</Notes>
+<thelink>http://www.cwu.edu/~vogtp/4th%20Week/Petstorev2.html</thelink>
+</Term>
+<Term>
+<ID>3</ID>
+<Name>Assignment 3 - Edge Animate Title</Name>
+<Notes>Create an Edge Animate title for Assignment #2. Due: November 17, 2014</Notes>
+<thelink>http://www.cwu.edu/~vogtp/4th%20Week/Petstorev2.html</thelink>
+</Term>
+<Term>
+<ID>4</ID>
+<Name>Assignment 4 - ActionScript + Flash</Name>
+<Notes>Correct the error and provide a date readout for Scene 2 in the Time Between Times calculator. Due: Nov. 25, 2014</Notes>
+<thelink>http://www.cwu.edu/~vogtp/AS3DaysBetweenDates/AS3DaysBetweenDates.swf</thelink>
+</Term>
+<Term>
+<ID>5</ID>
+<Name>Assignment 5 - PHP Livesearch</Name>
+<Notes>Change the livesearch html/php pages so that they display infomation about three programming terms. Due: Nov. 25, 2014</Notes>
+<thelink>http://www.cwu.edu/~vogtp/Week9/livesearch.html</thelink>
+</Term>
+<Term>
+<ID>6</ID>
+<Name>Assignment 6 - PHP Livesearch</Name>
+<Notes>Create an index page for your IT 426 website that makes use of the technologies presented in class. </Notes>
+<thelink>http://www.cwu.edu/~vogtp/</thelink>
+</Term>
+<Term>
+<ID>7</ID>
+<Name>Final - PHP Livesearch</Name>
+<Notes>Livesearch of Terms with example code pages</Notes>
+<thelink>http://www.cwu.edu/~vogtp/Final/a.html</thelink>
+</Term>
+</dataroot>

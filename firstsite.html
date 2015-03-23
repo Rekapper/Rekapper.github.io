@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery - Basic Mobile Layout</title>
+<!-- Set screen width and scale based on end user -->
+<meta name="viewport" content="device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<div data-role="page" id="page">
+  <div data-role="header">
+    <h1>Header</h1>
+  </div>
+  <div class="ui-content" role="main">
+	<ul data-role="listview">
+    <li><a href="#page2">Page Two</a></li>
+    <li><a href="#page3">Page Three</a></li>
+    <li><a href="#page4">Page Four</a></li>
+    </ul>
+</div>
+  </div>
+  <div data-role="footer">
+  	<h4>Footer Text</h4>
+  </div>
+</div>
+<div data-role="page" id="page2">
+  <div data-role="header">
+  <a href="#page" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Home</a>
+  <a href="#page3" class="ui-btn ui-icon-arrow-r ui-btn-icon-right">Page3</a>
+    <h1>Page 2</h1>
+  </div>
+  <div class="ui-content">
+    The Content for page 2 Goes Here.
+  </div>
+  <div data-role="footer">
+  	<h4>Footer Text</h4>
+  </div>
+</div>
+<div data-role="page" id="page3">
+  <div data-role="header">
+    <a href="#page" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Home</a>
+    <a href="#page4" class="ui-btn ui-icon-arrow-r ui-btn-icon-right">Page4</a>
+    <h1>Page 3</h1>
+  </div>
+  <div class="ui-content">
+    The Content for page 3 Goes Here.
+  </div>
+  <div data-role="footer">
+  	<h4>Footer Text</h4>
+  </div>
+</div>
+<div data-role="page" id="page4">
+  <div data-role="header">
+    <a href="#page" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Home</a>
+    <h1>Page 4</h1>
+  </div>
+  <div class="ui-content">
+    The Content for page 4 Goes Here.
+  </div>
+  <div data-role="footer">
+  	<h4>Footer Text</h4>
+  </div>
+</div>
+</body>
+</html>

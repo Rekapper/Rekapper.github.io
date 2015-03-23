@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" generated="2014-10-27T08:13:57">
+<Term>
+<ID>1</ID>
+<Name>A - First Page</Name>
+<Notes>First use of jQuery for Mobile Design</Notes>
+<thelink>http://www.cwu.edu/~vogtp/firstpage.html</thelink>
+</Term>
+<Term>
+<ID>2</ID>
+<Name>B - First Site</Name>
+<Notes>First use of jQuery for Mobile Design on Multiple Pages</Notes>
+<thelink>http://www.cwu.edu/~vogtp/firstsite.html</thelink>
+</Term>
+<Term>
+<ID>3</ID>
+<Name>1 - Assignment 1</Name>
+<Notes>Create a four page (one main - three secondary) list driven mobile site using placeholder text and at least three pictures</Notes>
+<thelink>http://www.cwu.edu/~vogtp/A1/a1.html</thelink>
+</Term>
+<Term>
+<ID>4</ID>
+<Name>C - Tip Calculator</Name>
+<Notes>Calculates the Tip and Split</Notes>
+<thelink>http://www.cwu.edu/~vogtp/TipCalc/T.html</thelink>
+</Term>
+<Term>
+<ID>5</ID>
+<Name>2 - Assignment 2</Name>
+<Notes>Create an app that calculates the cost of visiting a theme park. Include elements that add value to the user's experience of working with your app.</Notes>
+<thelink>http://www.cwu.edu/~vogtp/A2/a.html</thelink>
+</Term>
+<Term>
+<ID>6</ID>
+<Name>Computers of The Future</Name>
+<Notes>Payment Calculator</Notes>
+<thelink>http://www.cwu.edu/~vogtp/cotf/view.html</thelink>
+</Term>
+<Term>
+<ID>7</ID>
+<Name>Google Maps API v. Directions</Name>
+<Notes>Directions generator Google Maps API</Notes>
+<thelink>http://www.cwu.edu/~vogtp/GEO/directions.html</thelink>
+</Term>
+<Term>
+<ID>8</ID>
+<Name>Google Maps API Geo-location GPS</Name>
+<Notes>Google Maps locater GPS</Notes>
+<thelink>http://www.cwu.edu/~vogtp/GEO/GPSMap.html</thelink>
+</Term>
+<Term>
+<ID>9</ID>
+<Name>MidTerm</Name>
+<Notes>MidTerm</Notes>
+<thelink>http://www.cwu.edu/~vogtp/Midterm/view.html</thelink>
+</Term>
+<Term>
+<ID>10</ID>
+<Name>3 - Assignment 3</Name>
+<Notes>Create a single file multiple page proposal for your final project. Include a statement of scope, intended audience, XML driven progress report, and overview of technical use including localStorage.</Notes>
+<thelink>http://www.cwu.edu/~vogtp/A3/a.html</thelink>
+</Term>
+</dataroot>

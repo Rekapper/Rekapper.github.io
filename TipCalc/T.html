@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tip Calc</title>
+<!-- Set screen width and scale based on end user -->
+<meta name="viewport" content="device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+.bigText{
+font-size:xx-large;
+color:#9D0306
+}
+</style>
+<script>
+//Variables
+var costOfMeal=0; 
+var theTip=.15;  //percent of tip
+var tipAmount=0;
+var totalWithTip=0; //grand total
+var splitNumber=1; //number of people splitting tip
+var perPerson=0; //cost of meal per person
+var perPersonTip=0; //cost of tip per person
+$(document).on("pageinit",function(){
+	$("#convertButton").click(function(){
+		//Listener
+		costOfMeal = parseFloat($('#com').val());
+		if(!costOfMeal){costOfMeal=0;}
+		tipAmount = costOfMeal*theTip;
+		totalWithTip = costOfMeal+tipAmount;
+		//write to div
+		$('#com2').html('<h3>The meal costs: <span class="bigText">$'+costOfMeal.toFixed(2))+'</span></h3>';
+		$('#tipAnswer').html('<h3>At <span class="bigText">'+(theTip*100).toFixed(0)+'%</span> the tip is <span class="bigText">$'+tipAmount.toFixed(2))+'</span></h3>';
+		$('#totalAmount').html('<h3>For a total of: <span class="bigText">$'+totalWithTip.toFixed(2))+'</span></h3>';
+	})
+	$("#splitButton").click(function(){
+		perPerson = totalWithTip/splitNumber;
+		perPersonTip = tipAmount/splitNumber;
+		if(splitNumber == 1){$('#perAnswer').text('Without splitting the bill, the total with tip comes to $'+totalWithTip.toFixed(2));$('#perTip').text('');}
+		else{
+		$('#perAnswer').html('<h4>Split the meal</h4><span class="bigText">$'+totalWithTip.toFixed(2)+'</span> split <span class="bigText">'+splitNumber + '</span> ways works out to be: <span class="bigText">$'+perPerson.toFixed(2)+ '</span> per person');$('#perTip').html('<h4>Split The Tip</h4>A <span class="bigText">$'+tipAmount.toFixed(2)+'</span> tip split <span class="bigText">'+splitNumber+'</span> ways is <span class="bigText">$'+perPersonTip.toFixed(2)+'</span> per person.');}
+	})
+	//tip from first page
+	$('.rad').change(function(){theTip = $('.rad:checked').val()/100;
+		$('#tipSlide').val(theTip*100).slider('refresh');})
+		$('#tipSlide').change(function(){theTip = $('#tipSlide').val()/100;})
+		$('.rad1').change(function(){splitNumber = $('.rad1:checked').val();
+		$('#splitSlider').val(splitNumber).slider('refresh');})
+		$('#splitSlider').change(function(){splitNumber = $('#splitSlider').val();})
+})
+</script>
+</head>
+<body>
+<div data-role="page" id="page" data-theme="b">
+  <div data-role="header">
+    <h1>Tip Calc</h1>
+  </div>
+  <div class="ui-content" role="main">
+	<div class="ui-field-contain">
+    <label for "com">Cost of meal:</label>
+	<input type="number" name="com" id="com" value="" placeholder="Enter it Here" step="0.01"/>
+		<div class="ui-field-contain">
+		<fieldset data-role="controlgroup" data-type="horizontal">
+        <legend>Percent to tip:</legend>
+            <input class="rad" name="radioA" type="radio" id="radioA1" value="5"/><label for="radioA1">5%</label>
+            <input class="rad" name="radioA" type="radio" id="radioA2" value="10"/><label for="radioA2">10%</label>
+            <input class="rad" name="radioA" type="radio" id="radioA3" value="15" checked/><label for="radioA3">15%</label>
+            <input class="rad" name="radioA" type="radio" id="radioA4" value="20"/><label for="radioA4">20%</label>
+        </fieldset>
+		</div>
+    </div>
+ <input type="range" name="tipSlide" id="tipSlide" value="15" min="0" max="30"/>
+ <a href="#page2" class="ui-btn ui-corner-all" id="convertButton">Calculate Tip</a>
+</div>
+  <div data-role="footer" data-position="fixed">
+  	<h1>Cost and Tip</h1>
+  </div>
+</div>
+<div data-role="page" id="page2" data-theme="b">
+  <div data-role="header">
+  <a href="#page" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Back</a>
+    <h1>Tip Calculator</h1>
+  </div>
+  <div class="ui-content" role="main">
+	<div id="com2">costOfMeal</div>
+    <div id="tipAnswer">tip</div>
+    <div id="totalAmount">totalAmount</div>
+    		<div class="ui-field-contain">
+   		<fieldset data-role="controlgroup" data-type="horizontal">
+        <legend>Number Splitting the Check:</legend>
+            <input class="rad1" name="radioB" type="radio" id="radioB1" value="1"/><label for="radioB1">1</label>
+            <input class="rad1" name="radioB" type="radio" id="radioB2" value="2"/><label for="radioB2">2</label>
+            <input class="rad1" name="radioB" type="radio" id="radioB3" value="3"/><label for="radioB3">3</label>
+            <input class="rad1" name="radioB" type="radio" id="radioB4" value="4"/><label for="radioB4">4</label>
+            <input class="rad1" name="radioB" type="radio" id="radioB5" value="5"/><label for="radioB5">5</label>
+            <input class="rad1" name="radioB" type="radio" id="radioB6" value="6"/><label for="radioB6">6</label>
+        </fieldset>
+        </div>
+         <div><input type="range" name="splitSlider" id="splitSlider" value="1" min="1" max="12"/></div>
+         <a href="#page3" class="ui-btn ui-corner-all" id="splitButton">Figure the Split</a>
+</div>
+ <div data-role="footer" data-position="fixed">
+  	<h1>Results</h1>
+  </div>
+
+</div>
+<div data-role="page" id="page3" data-theme="b">
+  <div data-role="header">
+    <a href="#page2" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Split</a>
+    <a href="#page" class="ui-btn ui-icon-home ui-btn-icon-right">Home</a>
+    <h1>Tip Calculator</h1>
+  </div>
+  <div class="ui-content" role="main">
+  <div id="perAnswer">cost per person</div>
+  <br><div id="perTip">cost per person</div>
+  </div>
+  <div data-role="footer" data-position="fixed">
+  	<h4>Final Cost</h4>
+  </div>
+</div>
+</body>
+</html>

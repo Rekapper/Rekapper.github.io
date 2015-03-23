@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style type="text/css">
+body{
+	background: -webkit-linear-gradient(left, rgba(255,0,0,0), rgba(255,0,0,1)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, rgba(255,0,0,0), rgba(255,0,0,1)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, rgba(255,0,0,0), rgba(255,0,0,1)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); /* Standard syntax (must be last) */
+	-webkit-transition: all 3s;
+	-o-transition: all 3s;
+	transition: all 3s;
+}
+#container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+	background-color: #317A29;
+	text-align: center;
+	-webkit-transition: all 5s ease-in;
+	-o-transition: all 5s ease-in;
+	transition: all 5s ease-in;
+}
+#title  {
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+	color: #350A0B;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+	font-weight: lighter;
+	font-size: xx-large;
+	text-align: center;
+	background-color: #8BB47C;
+}
+#inputs {
+	float: left;
+}
+#addremove #addABird #inputs {
+	text-align: left;
+}
+#container #addremove #addABird {
+}
+#container #addremove #endFloat {
+	float: none;
+	clear: both;
+}
+#container #currentInventory {
+	text-align: left;
+}
+#container:hover {
+	background-color: #52A7C1;
+}
+body:hover {
+	background-color: #58ADDC;
+}
+</style>
+</head>
+<body>
+<div id="container">
+	<div id="title">
+    <h2>BestBirds</h2>
+    <h5>&quot;We only fly with the best&quot;</h5>
+    </div>
+<div id="currentInventory">
+Current Inventory:
+  <div id="answer"></div>
+</div>
+<div id="addremove">
+<div id="addABird">
+
+  <div id="inputs"><form>
+    <p>Add a new bird:<br>
+      <label>Bird's Name:
+        </label>
+      <input name="BirdName" type="text" id="BirdName"><br>
+      <label>Bird's Breed:
+        </label>
+      <input name="BirdBreed" type="text" id="BirdBreed"><br>
+      <label>Bird's Age:&nbsp;&nbsp;
+        </label>
+      <input name="BirdAge" type="text" id="BirdAge">
+      </p>
+    <p>
+      <input type="button" name="button" id="button" value="Submit" onClick="validateInput()">
+      </p>
+  </form></div>
+</div>
+<div id="deleteABird">
+  <p>&nbsp;</p>
+  <p>	Remove a bird:
+    <select name="dropBird" id="dropBird" onChange="DeleteBird()">
+    <option value="delete">Delete A Bird</option>
+    </select>
+  </p>
+</div>
+<div id="endFloat"></div>
+</div>
+</div>
+<script>
+//getFromForm
+//clearBirdSelect
+//clearBirdArray
+//clearBirdList
+//displayList
+//addToSelect
+var a = document.getElementById("answer");
+var selectBird = document.getElementById("dropBird");
+var birds = [];
+//Bird Constructor
+function Bird(name,breed,age){
+	this.name = name;
+	this.breed = breed;
+	this.age = age;
+}
+function validateInput(){
+var formAge = document.getElementById("BirdAge").value;	
+	if(isNaN(formAge)){
+	alert("Please Enter a Number for Age");}
+	else if(formAge<1){alert("Enter a Real Age");}
+	else{
+	getFromForm();
+	}
+}
+function getFromForm(){
+var formName = document.getElementById("BirdName").value;
+var formBreed = document.getElementById("BirdBreed").value;
+var formAge = document.getElementById("BirdAge").value;
+var newBird = new Bird(formName,formBreed,formAge);
+birds.push(newBird);
+birds.sort(sortByName);
+displayList();
+clearBirdSelect();
+populateBirdSelect();
+}
+function sortByName(bird1,bird2){
+	if(bird1.name > bird2.name){return 1;}
+	else if (bird1.name===bird2.name){return 0;}
+	else{return -1;}
+}
+function displayList(){
+a.innerHTML="";
+for(var i=0; i < birds.length; i++)
+{a.innerHTML += i+1+": " +birds[i].name + " the " + birds[i].breed +"<br>";}
+}
+function populateBirdSelect(){
+for(var i=0; i < birds.length; i++){
+	var selectItem = birds[i].name +" - "+ birds[i].breed;
+	var dropItem = document.createElement("option");
+	dropItem.text = selectItem;
+	dropItem.value = selectItem;
+	selectBird.appendChild(dropItem);
+}
+}
+function clearBirdSelect(){
+//for (var i=selectBird.option;){}
+document.getElementById("dropBird").options.length = 0;
+}
+function DeleteBird(){
+window.confirm("Are you sure you want to delete a bird?");
+if (true) { removeSelectedItem();}
+else {}
+}
+function removeSelectedItem(){
+var selectBirdLength = document.getElementById('dropBird').length;
+for (var i = 0; i < selectBirdLength; i++) {
+	if (selectBird[i].selected) {
+		birds.splice(i-1,1);
+		birds.sort(sortByName);
+		clearBirdSelect();
+		populateBirdSelect();
+		displayList();
+		} 
+	}
+}
+</script>
+</body>
+</html>

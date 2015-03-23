@@ -1,0 +1,92 @@
+
+{
+
+	"HTMLFileName":"Petstorev4.html",
+	"PosterCapturePos":"4000",
+	"ModelData":"{\
+\"stage\": {\
+   \"timelines\": {\
+      \"Default Timeline\": {\
+      }\
+   }},\
+\"Preloader\": {\
+   \"timelines\": {\
+\
+   }},\
+\"Down-level\": {\
+   \"timelines\": {\
+\
+   }}\
+}",
+	"expanded:images/Rocket_cat_cropped.jpg":"nil",
+	"PosterImagePath":"images/Poster.png",
+	"PubDPSUseCDN":"true",
+	"pref__general__FilterNonAnimatedElements":"false",
+	"symbol_stage":{
+		"element_${Text}":{
+			"timelineColor2":"0x81aa62",
+			"timelineColor3":"0x5b6c4d",
+			"timelineColor":"0x91c767"},
+		"dummyStageParentWidth":"900px",
+		"element_${TitleText}":{
+			"timelineColor2":"0x4fa275",
+			"timelineColor3":"0x456a55",
+			"animationEnabled":"true",
+			"timelineColor":"0x50bd82"},
+		"dummyStageParentHeight":"150px",
+		"element_${bird}":{
+			"timelineColor2":"0x168c84",
+			"timelineColor3":"0x2a605c",
+			"animationEnabled":"false",
+			"timelineColor":"0x00a096"},
+		"element_${Subtitle}":{
+			"timelineColor2":"0x1aa38f",
+			"timelineColor3":"0x2a6a61",
+			"timelineColor":"0x00bda4",
+			"animationEnabled":"true",
+			"usingMotionPaths":"true"},
+		"defaultStageParentHeight":"150px",
+		"element_${Dog}":{
+			"timelineColor2":"0x5a558a",
+			"timelineColor3":"0x4a485e",
+			"animationEnabled":"true",
+			"timelineColor":"0x63599f"},
+		"element_${Stage}":{
+			"timelineColor2":"0xcbbd71",
+			"timelineColor3":"0x7b7652",
+			"animationEnabled":"true",
+			"timelineColor":"0xeedf79"},
+		"defaultStageParentWidth":"900px",
+		"element_${bird2}":{
+			"timelineColor2":"0x326a96",
+			"timelineColor3":"0x385063",
+			"timelineColor":"0x2f73ad",
+			"animationEnabled":"true",
+			"usingMotionPaths":"true"},
+		"element_${WBird}":{
+			"timelineColor2":"0x107faa",
+			"timelineColor3":"0x295a6d",
+			"timelineColor":"0x008dc8",
+			"animationEnabled":"true",
+			"usingMotionPaths":"true"},
+		"element_${Rocket_cat_cropped}":{
+			"timelineColor2":"0x1095d2",
+			"timelineColor3":"0x29647e",
+			"animationEnabled":"true",
+			"timelineColor":"0x00a9fa"}},
+	"expanded:images/Poster.png":"nil",
+	"pref__general__AutoKeyframePropertiesArmed":"true",
+	"StageZoomFactor":"36",
+	"expanded:images/WBird.png":"nil",
+	"TransitionIdCounter":"28",
+	"CompZoomFactor":"100",
+	"expanded:images/bird2.png":"nil",
+	"pixelsPerMs":"0.2",
+	"PubDPS":"true",
+	"expanded:images/bird.png":"nil",
+	"usedBOM":"false",
+	"nextElementColorIndex":"10",
+	"stage-Default Timeline_playhead_ms":"0",
+	"viewStartY":"0",
+	"expanded:images/Dog.png":"nil",
+	"PubWeb":"false"}

@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Local Variables</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="center">
+<div id="title">Local Variables</div>
+<div id="define">Local Variables are used to keep a variable only functioning within their own function. For example in the code below the while the call for the variable on the button press is within the function, we change the variable within the function so that alert will only show the variable within the function.</div>
+<div id="codeExample">var Local = "Global";<br>function Alert(){<br>
+Local = "Local";<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(Local);<br>
+}
+</div>
+<div id="code"><input type="button" onClick="Alert()" value="Click to Show Alert" autofocus></div>
+</div>
+</body>
+<script type="text/javascript">
+var Local = "Global";
+function Alert(){
+Local = "Local";
+		alert(Local);
+}
+</script>
+</html>

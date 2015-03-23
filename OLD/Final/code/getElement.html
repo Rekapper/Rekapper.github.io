@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>document.getElementById</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="center">
+<div id="title">document.getElementById</div>
+<div id="define">document.getElementById will locate an Id and allow you to interact with it, for example:<br>Upon clicking on the button below, more text will be added to this sentence</div>
+<div id="codeExample">function Click(){<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById("define").innerHTML += "More Text added by clicking on button";<br>
+}
+</div>
+<div id="code"><input type="button" onClick="Click()" value="Click to Show More" autofocus></div>
+</div>
+</body>
+<script type="text/javascript">
+function Click(){
+		document.getElementById("define").innerHTML += "More Text added by clicking on button";
+}
+</script>
+</html>

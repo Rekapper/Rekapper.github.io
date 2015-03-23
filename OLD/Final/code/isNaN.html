@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Is Not A Number</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="center">
+<div id="title">isNaN</div>
+<div id="define">Can check and compare if string is not a number.</div>
+<div id="codeExample">function Alert(){<br>
+var formAge = document.getElementById('Age').value;	<br>
+	if(isNaN(formAge)){<br>
+	alert("Please Enter a Number for Age");}<br>
+	else if(formAge<1){alert("Enter a Real Age");}<br>
+	else{<br>
+	alert("Thank you for entering your age");<br>
+	}<br>
+}</div>
+  <label>Enter an Age:
+        </label>
+      <input name="Age" type="text" id="Age">
+<div id="code"><input type="button" onClick="Alert()" value="Click to Show Alert if age is not a number" autofocus></div>
+</div>
+</body>
+<script type="text/javascript">
+function Alert(){
+var formAge = document.getElementById('Age').value;	
+	if(isNaN(formAge)){
+	alert("Please Enter a Number for Age");}
+	else if(formAge<1){alert("Enter a Real Age");}
+	else{
+	alert("Thank you for entering your age");
+	}
+}
+</script>
+</html>

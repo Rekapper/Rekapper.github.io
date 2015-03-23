@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dataroot>
+<packet>
+<ID>1</ID>
+<cost>9.95</cost>
+<Location>Akaki Falls - Hawaii</Location>
+<pic>Hawaii.jpg</pic>
+<notes>Contains a variety of waterfall sounds and ambiance unique to Hawaii</notes>
+<link>https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/127358113&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false</link>
+<x>19.853966</x>
+<y>-155.15223600000002</y>
+</packet>
+<packet>
+<ID>2</ID>
+<cost>20.00</cost>
+<Location>Redmond, WA</Location>
+<pic>Frog.jpg</pic>
+<notes>Frogs in mid winter at a pond</notes>
+<link>https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/195527471%3Fsecret_token%3Ds-ST0Ye&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false</link>
+<x>47.6694</x>
+<y>-122.1239</y>
+</packet>
+<packet>
+<ID>4</ID>
+<cost>100.00</cost>
+<Location>Kona, Hawaii - Birds</Location>
+<pic>Kona.jpg</pic>
+<notes>Contains 300 samples of birds totaling to 3 hours of recordings</notes>
+<link>https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/195528626%3Fsecret_token%3Ds-oYmqW&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false</link>
+<x>19.6500</x>
+<y>-155.9942</y>
+</packet>
+<packet>
+<ID>5</ID>
+<cost>1.00</cost>
+<Location>Kona, Hawaii - Rain</Location>
+<pic>Rain.jpg</pic>
+<notes>Heavy Rain fall long sample recordings of solid length.</notes>
+<link>https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/195529614%3Fsecret_token%3Ds-fn1yy&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false</link>
+<x>19.6500</x>
+<y>-155.9942</y>
+</packet>
+</dataroot>

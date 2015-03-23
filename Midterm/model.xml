@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dataroot>
+<standards>
+<interestRate>8.0</interestRate>
+<salesTax>0.09</salesTax>
+</standards>
+<computer>
+<ID>1</ID>
+<brand>Firenze, Pisa, Milano</brand>
+<cost>990.00</cost>
+<model>Beautiful Tuscany (4 days)</model>
+<pic>tour1small.jpg</pic>
+<term>1</term>
+<notes>The tour of Tuscany consists of 4 days visiting Firenze, Pisa, and Milano for $990.00 per person</notes>
+</computer>
+<computer>
+<ID>2</ID>
+<brand>Roma, Venezia, Milano</brand>
+<cost>2100.00</cost>
+<model>The Best of Italy (12 days)</model>
+<pic>tour2small.jpg</pic>
+<term>1</term>
+<notes>The Best of Italy tour consist of sing everything possible across 12 days at the cost of $2100.00 per person</notes>
+</computer>
+<computer>
+<ID>3</ID>
+<brand>Pompeii, Roma, Napoli</brand>
+<cost>1760.00</cost>
+<model>Historic Places (8 days)</model>
+<pic>tour3small.jpg</pic>
+<term>1</term>
+<notes>The tour of Historic Places throughout Italy consists of visiting Pompeii, Roma, and Napoli for $1760.00 per person</notes>
+</computer>
+<computer>
+<ID>4</ID>
+<brand>Firenze, Venezia, Roma</brand>
+<cost>1450.00</cost>
+<model>The Art Tour (6 days)</model>
+<pic>tour4small.jpg</pic>
+<term>1</term>
+<notes>The Art Tour of Italy visits all the art museum in Firenze, Venezia, and Roma for $1450.00 per person</notes>
+</computer>
+</dataroot>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dataroot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<band>
+		<ID>1</ID>
+		<Artist>A Problem Like Maria</Artist>
+		<Site>Website</Site>
+		<LaunchVehicle>Dream Pop, Pop, Rap</LaunchVehicle>
+		<thelink>http://aplmaria.thehai.org</thelink>
+	</band>
+	<band>
+		<ID>2</ID>
+		<Artist>A Problem Like Maria</Artist>
+		<Site>The Hai Profile</Site>
+		<LaunchVehicle>Dream Pop, Pop, Rap</LaunchVehicle>
+	</band>
+	<band>
+		<ID>3</ID>
+		<Artist>A Problem Like Maria</Artist>
+		<Site>Bandcamp</Site>
+		<LaunchVehicle>Dream Pop, Pop, Rap</LaunchVehicle>
+	</band>
+	<band>
+		<ID>4</ID>
+		<Artist>A Problem Like Maria</Artist>
+		<Site>Facebook</Site>
+		<LaunchVehicle>Dream Pop, Pop, Rap</LaunchVehicle>
+	</band>
+	<band>
+		<ID>5</ID>
+		<Artist>A Problem Like Maria</Artist>
+		<Site>Tumblr</Site>
+		<LaunchVehicle>Dream Pop, Pop, Rap</LaunchVehicle>
+	</band>
+	<band>
+		<ID>6</ID>
+		<Artist>A Problem Like Maria</Artist>
+		<Site>Twitter</Site>
+		<LaunchVehicle>Dream Pop, Pop, Rap</LaunchVehicle>
+	</band>
+	<band>
+		<ID>7</ID>
+		<Artist>Blingley</Artist>
+		<Site>The Hai Profile</Site>
+		<LaunchVehicle>Glitch, IDM</LaunchVehicle>
+	</band>
+	<band>
+		<ID>8</ID>
+		<Artist>Blingley</Artist>
+		<Site>Bandcamp</Site>
+		<LaunchVehicle>Glitch, IDM</LaunchVehicle>
+	</band>
+	<band>
+		<ID>9</ID>
+		<Artist>Blingley</Artist>
+		<Site>Soundcloud</Site>
+		<LaunchVehicle>Glitch, IDM</LaunchVehicle>
+	</band>
+	<band>
+		<ID>10</ID>
+		<Artist>Flying Batteries</Artist>
+		<Site>Bandcamp</Site>
+		<LaunchVehicle>Rock, Scottish, Pop, Synth</LaunchVehicle>
+	</band>
+	<band>
+		<ID>11</ID>
+		<Artist>Flying Batteries</Artist>
+		<Site>The Hai Profile</Site>
+		<LaunchVehicle>Rock, Scottish, Pop, Synth</LaunchVehicle>
+	</band>
+	<band>
+		<ID>12</ID>
+		<Artist>Flying Batteries</Artist>
+		<Site>Soundcloud</Site>
+	</band>
+	<band/>
+	<band/>
+	<band/>
+	<band/>
+	<band/>
+	<band/>
+	<band/>
+	<band/>
+	<band/>
+	<band/>
+</dataroot>

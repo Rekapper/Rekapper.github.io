@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>querySelector</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="center">
+<div id="title">querySelector</div>
+<div id="define">A QuerySelector will run through the entire document until it returns a match.  For example in our Alert below, we search for this div id'd as define and replace it with new text.</div>
+<div id="codeExample">function Alert(){<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.querySelector("#define").innerHTML="New Text";<br>
+}
+</div>
+<div id="code"><input type="button" onClick="Alert()" value="Click to Show Alert" autofocus></div>
+</div>
+</body>
+<script type="text/javascript">
+function Alert(){
+		document.querySelector("#define").innerHTML="New Text";
+}
+</script>
+</html>

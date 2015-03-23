@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>GeoLocating Samples</title>
+<!-- Set screen width and scale based on end user -->
+<meta name="viewport" content="device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<link href="style.css" rel="stylesheet" type="text/css">
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script src="modelview.js"></script>
+<script>
+function rate(){
+localStorage.setItem(whichOne,$('input[name="Rating"]:checked').val());
+//alert(localStorage.getItem(whichOne));
+}
+//function getRate(){	localStorage.getItem('input[name="Rating"]:checked')}
+
+</script>
+<script type="text/javascript" src="http://jscart.googlecode.com/svn/jscart.js"></script> 
+
+<script type="text/javascript">
+   simpleCart.email = "email@address.com";
+   simpleCart.checkoutTo = PayPal;
+   simpleCart.currency = USD;
+   simpleCart.taxRate  = 0.078;
+   simpleCart.shippingQuantityRate = 1.00;
+
+simpleCart.cartHeaders = ["Thumb_image_noHeader", "Name" , "Size_input_div_div", "Price" , "decrement_noHeader" , "Quantity", "increment_noHeader", "remove_noHeader", "Total" ];
+</script>
+</head>
+<body>
+<div data-role="page" id="page">
+  <div data-role="panel" id="myPanel"> 
+    <h2>Menu</h2>
+    <a href="#About" class="ui-btn ui-corner-all ui-shadow" id="Aboutclick">About Geo Samples</a>
+  </div> 
+  <div data-role="header">
+  <a href="#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow" id="menu">Menu</a>
+    <h1>GeoLocating <br>Samples </h1><a href="#" class="ui-btn ui-btn-right" id="rgtbtn" onClick="color()">Style</a>
+  </div>
+  <div class="ui-content" role="main">
+  <br>	<div id="inventoryList" data-filter="true" ul data-role="listview">Loading</div>
+</div>
+  <div data-role="footer">
+  	<h4>Home Page</h4>
+  </div>
+  </div>
+<div data-role="page" id="page1">
+  <div data-role="header"><a href="#page" class="ui-btn ui-icon-arrow-l ui-btn-icon-left" id="lftbtn">Home</a>
+    <h1>Samples</h1>
+  </div>
+  <div class="ui-content">
+	<div id="SC">Soundcloud Player</div>
+  <div class="rating">
+    <div data-role="fieldcontain">
+      <fieldset data-role="controlgroup" data-type="horizontal" onClick="rate()">
+        <legend>Rating:</legend>
+        <input type="radio" name="Rating" id="Rating_0" value="5" />
+        <label for="Rating_0">&#9733;&#9733;&#9733;&#9733;&#9733;</label>
+        <input type="radio" name="Rating" id="Rating_1" value="4" />
+        <label for="Rating_1">&#9733;&#9733;&#9733;&#9733;&#9734;</label>
+        <input type="radio" name="Rating" id="Rating_2" value="3" />
+        <label for="Rating_2">&#9733;&#9733;&#9733;&#9734;&#9734;</label>
+        <input type="radio" name="Rating" id="Rating_3" value="2" />
+        <label for="Rating_3">&#9733;&#9733;&#9734;&#9734;&#9734;</label>
+        <input type="radio" name="Rating" id="Rating_4" value="1" />
+        <label for="Rating_4">&#9733;&#9734;&#9734;&#9734;&#9734;</label>
+      </fieldset>
+    </div></div><div role="main" class="ui-content" id="map-canvas"></div>
+  <div>The <span id="theLocation"></span> Sample Pack is only $<span id="theCost"></span> at Geo Samples.</div><br>
+<!--  <div><a href="#cart" class="ui-btn ui-btn-corner-all" onClick="add()">Add to cart</a></div>-->
+    	<a href="javascript:;" onclick="add()" >Add to cart</a></p>
+ Cart: <span class="simpleCart_total"></span> (<span class="simpleCart_quantity"></span> items) <br />
+    <a href="javascript:;" class="simpleCart_empty">Empty Cart</a> <a href="#carts" class="viewcart">Viewcart</a>
+  <div data-role="footer" data-position="fixed">
+  	<h4><span id="footerText"></span></h4>
+</div></div></div>
+<!--<div data-role="page" id="cart">
+  <div data-role="header"><a href="#page" class="ui-btn ui-icon-arrow-l ui-btn-icon-left" id="lftbtn">Home</a>
+    <h1>Cart</h1>
+  </div>
+  <div class="ui-content">
+
+  </div>
+</div>-->
+<div data-role="page" id="carts">
+<div data-role="header"><a href="#page" class="ui-btn ui-icon-arrow-l ui-btn-icon-left" id="lftbtn">Home</a>
+    <h1>Cart</h1>
+  </div>
+  <div class="ui-content">
+<div class="simpleCart_items" ></div>
+<div style="clear:left"></div>
+<!--<div class="couponcode">Coupon Code<br />
+<input type="text" id="ccv" value="" onchange="simpleCart.applydiscount()" /></div>-->
+
+SubTotal: <span class="simpleCart_total"></span> <br />
+Tax: <span class="simpleCart_taxCost"></span><br />
+Shipping: <span class="simpleCart_shippingCost"></span><br />
+
+<span id="couponcode"></span><br />
+Final Total: <span class="simpleCart_finalTotal"></span><br />
+<a href="#" class="simpleCart_checkout">checkout</a>
+</div>
+</div>
+<div data-role="page" id="About">
+<div data-role="header"><a href="#page" class="ui-btn ui-icon-arrow-l ui-btn-icon-left" id="lftbtn">Home</a>
+<h1>About GeoLocating <br>Samples</h1></div>
+<div class="ui-content" role="main">
+GeoLocating Samples are samples that are tied to their geolocational cordinates in order to understand the location as to where they were recorded using Google Maps API and Soundcloud Engine tied with jscart from https://code.google.com/p/jscart/wiki/Example.
+</div>
+</div>
+</body>
+</html>

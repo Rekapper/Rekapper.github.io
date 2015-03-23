@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>HTML Validation | Page 4</title>
+</head>
+<body>
+<div><h1><b>HTML Validation</b></h1></div>
+<div>
+<a href="indexb.html">Home</a>&nbsp;&nbsp;
+<a href="page1b.html">Page 1</a>&nbsp;&nbsp;
+<a href="page2b.html">Page 2</a>&nbsp;&nbsp;
+<a href="page3b.html">Page 3</a>&nbsp;&nbsp;
+<a href="page4b.html">Page 4</a>&nbsp;&nbsp;
+</div>
+<div>
+<h2>Sample Error Messages</h2>
+<dl>
+<dt><b>FATAL ERROR No DOCTYPE specified!</b></dt>
+<dd><i>
+"I could not parse this document, because it does not include a DOCTYPE Declaration. A DOCTYPE Declaration is mandatory for most current markup languages and without such a declaration it is impossible to validate this document."</i></dd>
+<dt>&nbsp;</dt>
+<dd>This will occur if you have a typo somewhere in your DOCTYPE statement. You should always copy and paste the DOCTYPE statement from a reliable source!</dd>
+<dt>&nbsp;</dt>
+<dt><b>Error statement:</b></dt>
+<dd><i>"Line 16, column 6: end tag for "head" which is not finished (explain...).
+&lt; &frasl; head &gt;"</i></dd>
+<dt>&nbsp;</dt>
+<dd>You look at your &lt; head &gt; tags and see that they are done correctly....and wonder why is it giving you this message about the head tag. This will occur if you forget to put in a &lt;title&gt; tag in your head section of your page. Even though the omitted &lt;title&gt; tag is the problem, the validator comments on it by saying that the head element isn't finished. That means that it is missing a required element, like the title tag. So, in this case, you would have to look at codes ABOVE the &lt; &frasl; head &gt; tag to find the error.</dd>
+<dt>&nbsp;</dt>
+<dt><b>Error statement:</b></dt>
+<dd><i>"Line 15, character "&lt;" is the first character of a delimiter but occurred as data."</i></dd>
+<dt>&nbsp;</dt>
+<dd>This comment will appear if you forget the closing quote around the value for an attribute. For example, if you have this tag: <b>&lt; ul type="square &gt; </b>When you forget to close the quote after an attribute value, the next element in the page will be an error because the &lt; starts a new code and you can't have a new code until you end the code before it.</dd>
+<dt>&nbsp;</dt>
+<dt><b>Error statement:</b></dt>
+<dd><i>"Line 21, column 37: document type does not allow element "h1" here; missing one of "object", "applet", "map", "iframe", "button", "ins", "del" start-tag."</i></dd>
+<dt>&nbsp;</dt>
+<dd>This comment will appear if you forget the closing slash on a closing tag. For example, if you have this code: <b>&lt;h1&gt;Whatever text you Want&lt;h1&gt;</b>. No code after this will be correct because you need the closing slash in the &lt; &frasl; head &gt; tag to <b>END</b> the code. Usually, if the validator reports that the "document type does not allow element here...", there is a problem with the coding that comes <b>BEFORE</b> the named element.</dd>
+</dl>
+</div>&nbsp;
+<div><p><b>Questions? Contact: </b><a href="mailto:durhamj@cwu.edu">durhamj@cwu.edu</a></p>
+<p><small>Copyright &copy; 2013 by John Durham</small></p>
+</div>
+</body>
+</html>

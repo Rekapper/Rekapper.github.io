@@ -1,8 +1,8 @@
-app.directive('post', function() { 
+app.directive('feedsterPost', function() { 
   return { 
     restrict: 'E', 
     scope: { 
-      info: '=' 
+      post: '=' 
     }, 
     templateUrl: 'js/directives/feedsterPost.html' 
   }; 

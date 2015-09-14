@@ -8,4 +8,4 @@ This is an accumulation of works from course work at Central Washington Universi
 Details
 -------------
 
-This library of works is available by accessing either this [GitHub page: Rekapper.github.io](http://Rekapper.github.io) or it is also available at [http://www.cwu.edu/~vogtp/](http://www.cwu.edu/~vogtp/).
+This library of works is available by this [GitHub page: Rekapper.github.io](http://Rekapper.github.io)
